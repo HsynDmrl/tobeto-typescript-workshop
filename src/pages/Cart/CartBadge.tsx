@@ -3,7 +3,7 @@ import { Badge, NavDropdown, Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { clearCart, addToCart, removeFromCart, removeItem } from "../../store/reducers/cartReducer";
 import { Cart4, Trash, Plus, DashLg } from "react-bootstrap-icons";
-
+import "./CartBadge.css";
 const CartBadge = () => {
   const cartState = useSelector((state: any) => state.cart);
   const dispatch = useDispatch();
@@ -36,11 +36,11 @@ const CartBadge = () => {
     <NavDropdown
       id="nav-dropdown-dark-example"
       title={
-        <div className="d-flex align-items-center pt-2">
+        <div className="d-flex align-items-center dropdown" >
           <Cart4 size={24} className="mr-2" color="white"/>
           <Badge pill className="ml-2">
             {cartState.cartItems.length}
-          </Badge>
+          </Badge>&nbsp;&nbsp;
         </div>
       }
       menuVariant="dark"
@@ -49,7 +49,7 @@ const CartBadge = () => {
     >
       {cartState.cartItems.length > 0 ? (
         cartState.cartItems.map((item: any) => (
-        <NavDropdown.Item key={item.id} >
+        <NavDropdown.Item key={item.id}>
           <div className="cart-item d-flex">
             <div className="flex-grow-1">
               <span className="item-title">{item.title} &nbsp;&nbsp;</span>
