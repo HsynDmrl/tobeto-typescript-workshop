@@ -4,11 +4,11 @@ import {ProductModel} from "../models/responses/ProductModel";
 
 class ProductService {
 	getAll() {
-		return axios.get<GetAllProductsModel>("http://nexgenrent.azurewebsites.net/api/cars/getAll");
+		return axios.get<GetAllProductsModel>("https://dummyjson.com/products");
 	}
 
 	getById(id: number) {
-		return axios.get<ProductModel>(`http://nexgenrent.azurewebsites.net/api/cars/${id}`);
+		return axios.get<ProductModel>("https://dummyjson.com/products/" + id);
 	}
 }
 
