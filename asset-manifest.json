@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tobeto-typescript-workshop/static/css/main.f42cd672.css",
+    "main.js": "/tobeto-typescript-workshop/static/js/main.1cdf5257.js",
+    "index.html": "/tobeto-typescript-workshop/index.html",
+    "main.f42cd672.css.map": "/tobeto-typescript-workshop/static/css/main.f42cd672.css.map",
+    "main.1cdf5257.js.map": "/tobeto-typescript-workshop/static/js/main.1cdf5257.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f42cd672.css",
+    "static/js/main.1cdf5257.js"
+  ]
+}
